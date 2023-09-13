@@ -80,6 +80,7 @@ mkdir aseprite-%ASEPRITE_VERSION%
 echo # This file is here so Aseprite behaves as a portable program >aseprite-%ASEPRITE_VERSION%\aseprite.ini
 xcopy /E /Q /Y aseprite\docs aseprite-%ASEPRITE_VERSION%\docs\
 xcopy /E /Q /Y build\bin\aseprite.exe aseprite-%ASEPRITE_VERSION%\
+xcopy /E /Q /Y build\lib aseprite-%ASEPRITE_VERSION%\lib\
 xcopy /E /Q /Y build\bin\data aseprite-%ASEPRITE_VERSION%\data\
 7z a -r aseprite-%ASEPRITE_VERSION%.zip aseprite-%ASEPRITE_VERSION% || echo failed to create output zip file && exit /b
 
