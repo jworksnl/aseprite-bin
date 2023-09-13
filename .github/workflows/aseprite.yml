@@ -3,7 +3,7 @@ name: aseprite
 
 on:
   schedule:
-    - cron: "57 12 * * *"
+    - cron: "4 13 * * *"
   push:
     branches:
       - master
